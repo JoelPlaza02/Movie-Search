@@ -12,7 +12,7 @@ const SearchBar = ({ setMovies, setSearchResults, searchResults }) => {
     e.preventDefault();
     console.log("Searching");
     try {
-      const url = `https://api.themoviedb.org/3/search/movie?api_key=dfec6e32b7f45c769731b600bb836c4d&query=${searchResults}`;
+      const url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${searchResults}`;
       const response = await fetch(url);
       const data = await response.json();
       console.log(data);
