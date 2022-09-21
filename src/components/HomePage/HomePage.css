@@ -1,0 +1,11 @@
+.homePage {
+  background-color: #302e2e;
+}
+
+.movieSection {
+  padding: 40px 45px 60px 60px;
+}
+
+.sidebarsection {
+  display: flex;
+}

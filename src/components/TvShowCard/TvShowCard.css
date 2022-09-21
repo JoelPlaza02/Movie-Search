@@ -1,0 +1,156 @@
+.tvShowCard {
+  margin: 0 25px 30px 0;
+  position: relative;
+}
+
+.TvShowCard__image {
+  width: 175px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.TvShowCard__vote {
+  background-color: orange;
+  border-radius: 30px;
+  font-size: 12px;
+  width: 30px;
+  padding: 2px;
+  text-align: center;
+  position: absolute;
+  top: -3%;
+  left: 40%;
+}
+
+.TvShowCard__title, 
+.TvShowCard__release {
+  width: 175px;
+  font-size: 13px;
+  font-family: Poppins;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.TvShowCard__release {
+  color: #8ca7bb;
+  font-size: 11px;
+}
+
+.TvShowCard__btn {
+  background-color: #3d3d3d;
+  color: red;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+.TvShowCard__btn:hover {
+  background-color: #525252;
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.modal-tv-img {
+  width: 250px;
+  height: 160px;
+  object-fit: contain;
+  position: absolute;
+  top: 11%;
+  right: 10%;
+}
+
+.modal-tv, .overlay-tv {
+  width: 100vw;
+  height: 100vh;
+  color: #000;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay-tv {
+  background: rgba(49,49,49,0.8);
+}
+.modal-tv-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.close-tv-modal {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-tv-title, 
+.modal-tv-vote, 
+.modal-tv-button, 
+.modal-tv-release, 
+.modal-tv-overview {
+  margin-top: 2rem;
+}
+
+.modal-tv-title {
+  font-size: 17px;
+  font-weight: bold;
+  width: 250px;
+}
+
+.modal-tv-vote {
+  background-color: orange;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 12px;
+  width: 30px;
+  padding: 2px;
+  text-align: center;
+}
+
+.modal-tv-overview {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.modal-tv-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-tv-button {
+  background-color: orange;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+
+/* Media Query Section */
+@media screen and (max-width: 584px) {
+  .TvShowCard {
+    margin-bottom: 40px;
+  }
+}

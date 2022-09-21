@@ -1,0 +1,25 @@
+.moviePopularSection {
+  display: flex;
+  flex-wrap: wrap;
+  color: lightgray;
+  padding-top: 25px;
+}
+
+.moviePopularSection__header {
+  color: #fff;
+  font-family: Poppins;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.moviePopularSection__notFound {
+  width: 100vw;
+  height: 50vh;
+}
+
+/* Media Query Section */
+@media screen and (max-width: 584px) {
+  .moviePopularSection {
+    display: block;
+  }
+}

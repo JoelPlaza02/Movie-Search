@@ -1,0 +1,66 @@
+.movieTrailer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  font-size: 22px;
+}
+
+.movieTrailer__input,
+.movieTrailer__button {
+  box-sizing: border-box;
+  height: 25px;
+  width: 39.7vw;
+  font-size: 20px;
+}
+
+.movieTrailer__input {
+  color: #000;
+  font-size: 14px;
+}
+
+.movieTrailer__header {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.movieTrailer__button {
+  background-color: rgb(43, 42, 42);
+  color: #b647d8;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.movieTrailer__playerWrapper {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Media Query Section */
+@media screen and (max-width: 829px) {
+  .movieTrailer__input, 
+  .movieTrailer__button {
+    width: 364px;
+  }
+
+  .movieTrailer__playerWrapper {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 542px) {
+  .movieTrailer__input,
+  .movieTrailer__button {
+    width: 300px;
+  }
+
+  .movieTrailer__playerWrapper {
+    width: 336px;
+  }
+}

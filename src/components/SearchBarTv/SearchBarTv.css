@@ -1,0 +1,60 @@
+.searchBarTv {
+  background-color: rgb(247, 68, 68);
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.7rem;
+}
+
+.SearchBarTv__form {
+  display: flex;
+  align-items: center;
+}
+
+.SearchBarTv__input {
+  background-color: rgb(247, 68, 68);
+  border: none;
+  color: #fff;
+  width: 30vw;
+  height: 20px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.SearchBarTv__input:focus {
+  outline: none;
+}
+
+.searchBarTv__right {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Poppins;
+}
+
+.searchBarTv__button {
+  background-color: #3d3d3d;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 6px;
+  margin-left: 1rem;
+}
+
+.searchBarTv__button:hover {
+  background-color: #525252;
+}
+
+
+/* Media Query Section */
+@media screen and (max-width: 828px) {
+  .searchBarTv__userEmailText {
+    display: none;
+  }
+}

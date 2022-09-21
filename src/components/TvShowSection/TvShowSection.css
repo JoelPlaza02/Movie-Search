@@ -1,0 +1,26 @@
+.tvShowSection {
+  display: flex;
+  flex-wrap: wrap;
+  color: lightgray;
+  padding-top: 25px;
+}
+
+.tvShowSection__header {
+  color: #fff;
+  font-family: Poppins;
+  margin: 30px 0 20px 35px;
+}
+
+.tvShowSection__notFound {
+  width: 100vw;
+  height: 50vh;
+  margin-left: 30px;
+}
+
+
+/* Media Query Section */
+@media screen and (max-width: 584px) {
+  .moviePopularSection {
+    display: block;
+  }
+}

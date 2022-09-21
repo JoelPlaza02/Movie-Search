@@ -1,0 +1,25 @@
+.sidebarRow {
+  cursor: pointer;
+  align-items: center;
+}
+
+.sidebarRow__title {
+  font-size: 14px;
+}
+
+.sidebarRow__category.active, .sidebarRow__category {
+  display: flex;
+  height: 45px;
+  font-size: 14px;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.sidebarRow__category {
+  color: lightgray;
+}
+
+.sidebarRow__category:hover {
+  background-color: #3d3d3d;
+  color: red;
+}
