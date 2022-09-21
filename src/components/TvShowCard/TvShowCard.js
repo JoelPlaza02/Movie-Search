@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import StripeButton from '../StripeButton/StripeButton';
 import './TvShowCard.css';
@@ -52,10 +51,7 @@ const TvShowCard = ({ poster_path, vote_average, name, first_air_date, overview 
                     <p className='modal-tv-release'>Release Date: {first_air_date}</p>
                     <h4 className='modal-tv-overview'>Overview</h4>
                     <p>{overview}</p>
-                    <div className='modal-tv-buttons'>
-                        <Link to="/TrailerSearch">
-                          <button type='button' className='modal-tv-button'>See Trailer</button>
-                        </Link>
+                    <div className='modal-tv-button'>
                         <StripeButton />
                     </div>
                 </div>

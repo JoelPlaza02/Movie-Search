@@ -130,21 +130,9 @@ body.active-modal {
   margin-bottom: 0.5rem;
 }
 
-.modal-tv-buttons {
+.modal-tv-button {
   display: flex;
   flex-direction: column;
-}
-
-.modal-tv-button {
-  background-color: orange;
-  color: #fff;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 6px;
-  margin-bottom: 15px;
 }
 
 
