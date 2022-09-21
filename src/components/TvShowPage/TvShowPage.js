@@ -5,7 +5,7 @@ import TvShowSection from '../TvShowSection/TvShowSection';
 import ClipLoader from 'react-spinners/ClipLoader';
 import './TvShowPage.css';
 
-const TvSHOW_URL='https://api.themoviedb.org/3/tv/on_the_air?api_key=dfec6e32b7f45c769731b600bb836c4d&language=en-US&page=1';
+const TvSHOW_URL=`https://api.themoviedb.org/3/tv/on_the_air?api_key=${process.env.API_KEY}&language=en-US&page=1`;
 
 const TvShowPage = () => {
   const [tvShows, setTvShows] = useState([]);
