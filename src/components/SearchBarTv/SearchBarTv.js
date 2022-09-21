@@ -11,7 +11,7 @@ const SearchBarTv = ({ setTvShows, setTvSearchResults, tvSearchResults }) => {
       e.preventDefault();
       console.log("Searching for TV Shows...")
       try {
-        const Tv_url = `https://api.themoviedb.org/3/search/tv?api_key=dfec6e32b7f45c769731b600bb836c4d&query=${tvSearchResults}`;
+        const Tv_url = `https://api.themoviedb.org/3/search/tv?api_key=${process.env.API_KEY}&query=${tvSearchResults}`;
         const response = await fetch(Tv_url);
         const data = await response.json();
         console.log(data);
