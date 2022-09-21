@@ -5,7 +5,7 @@ import './HomePage.css';
 import Sidebar from '../Sidebar/Sidebar';
 import ClipLoader from 'react-spinners/ClipLoader';
 
-const API_URL=`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}&language=en-US`;
+const API_URL='https://api.themoviedb.org/3/movie/popular?api_key=dfec6e32b7f45c769731b600bb836c4d&language=en-US';
 
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
